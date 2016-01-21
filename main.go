@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/goestoeleven/GolangTraining/02_package/stringutil"
+)
 
 //func wrapper() func() int {
 //	x := 0
@@ -15,8 +18,9 @@ func main() {
 	//fmt.Println(increment())
 	//fmt.Println(increment())
 
-	for i := 65; i < 100; i++ {
-		fmt.Printf("%q \n",i)
-	}
+	fmt.Println(stringutil.MyName)
+	//for i := 65; i < 100; i++ {
+	//	fmt.Printf("%q \n",i)
+	//}
 
 }
