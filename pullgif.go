@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	//res, err := http.Get("http://www.mcleods.com/")
 	res, err := http.Get("http://stockcharts.com/def/servlet/SharpChartv05.ServletDriver?c=%24SILVER,PLTCDANRBO[PA][D][F1!3!!!4!20]&r=9926&pnf=y")
 	if err != nil {
 		log.Fatal(err)
@@ -20,6 +19,4 @@ func main() {
 
 	ioutil.WriteFile("c:\\temp\\silver.gif", page, 644)
 	res.Body.Close()
-
-	//fmt.Printf("%s", page)
 }
