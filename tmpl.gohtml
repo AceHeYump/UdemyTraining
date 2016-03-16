@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>PnFs</h1>
+{{$n := len .}}
+{{range $i, $e := .}}
+   {{if start $i}}<div>{{end}}<a href="http://www.stockcharts.com/freecharts/gallery.html?{{$e}}" target="_blank"><img src="/images/{{$e}}.png"></a>{{if finish $n $i}}</div>{{end}}
+{{end}}
+</body>
+</html>
+
+
